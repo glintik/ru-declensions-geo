@@ -1,0 +1,90 @@
+{
+    "extends": "airbnb",
+    "env": {
+        "node": true,
+        "mocha": true
+    },
+    "parser": "babel-eslint",
+    "plugins": [
+        "babel",
+        "react"
+    ],
+    "ecmaFeatures": {
+        "jsx": true,
+        "blockBindings": true
+    },
+    "globals": {
+        "window": true,
+        "document": true,
+        "navigator": true,
+        "setTimeout": true,
+        "location": true,
+        "history": true,
+        "XMLHttpRequest": true,
+        "sessionStorage": true,
+        "io": true,
+        "console": true,
+        "React": true,
+        "module": true,
+        "exports": true,
+        "__dirname": true,
+        "process": true,
+        "require": true,
+        "App": true,
+        "zapp": true,
+        "zx": true
+    },
+    "rules": {
+        "strict": 0,
+        "no-var": 1,
+        "quotes": [1, "single", "avoid-escape"],
+        "brace-style": [1, "1tbs", { "allowSingleLine": true }],
+        "react/jsx-uses-vars": 2,
+        "react/jsx-no-undef": 2,
+        "react/wrap-multilines": 0,
+        "react/sort-comp": 0,
+        "react/prop-types": 0,
+        "react/no-multi-comp": 0,
+        "react/jsx-boolean-value": 0,
+        "no-undef": 2,
+        "no-unused-vars": [
+            1,
+            {
+                "vars": "all",
+                "args": "none"
+            }
+        ],
+        "space-before-blocks": 1,
+        "space-before-function-paren": [2, { "anonymous": "always", "named": "never" }],
+        "func-names": 0,
+        "comma-dangle": 0,
+        "eqeqeq": 0,
+        "no-const-assign": 2,
+        "new-cap": [2, {
+            "newIsCap": true,
+            "properties": false
+        }],
+        "no-trailing-spaces": 0,
+        "spaced-comment": 0,
+        "indent": 0,
+        "prefer-const": 1,
+        "no-shadow": 1,
+        "guard-for-in": 0,
+        "no-eq-null": 0,
+        "padded-blocks": 0,
+        "semi": 0,
+        "no-loop-func": 0,
+        "no-new": 0,
+        "no-else-return": 0,
+        "no-multiple-empty-lines": 0,
+        "no-use-before-define": 0,
+        "no-param-reassign": 0,
+        "no-empty": 0,
+        "no-nested-ternary": 0,
+        "no-constant-condition": 0,
+        "eol-last": 0,
+        "vars-on-top": 0,
+        "dot-notation": 1,
+        "default-case": 1
+    }
+}
