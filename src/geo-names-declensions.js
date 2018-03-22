@@ -13,14 +13,23 @@ export default class GeoNamesDeclensions {
     // Глухие согласные
     static deafConsonants = ['п', 'ф', 'к', 'т', 'с', 'ш', 'х', 'ч', 'щ'];
 
+    // Non standart case
     static nonStandartCase = ['осташков'];
 
+    // Multiple names delimeter
     static delimiters = [' ', '-на-', '-'];
 
+    // Abbreviations, they are immutable
     static abbreviations = ['сша', 'оаэ', 'ссср', 'юар'];
 
+    // These words have not cases
     static immutableParts = ['санкт', 'дубаи'];
 
+    /**
+     * Get cases for given name
+     * @param name Geographical name
+     * @returns {*} Array with 6 cases or null if empty string given
+     */
     static getCases(name) {
         let lname = typeof name === 'string' ? name.toLowerCase() : '';
         if (lname.length == 0) {
@@ -315,7 +324,12 @@ export default class GeoNamesDeclensions {
         return this.deafConsonants.indexOf(char) !== -1;
     }
 
-    static isNonStandartCase(char) {
-        return this.nonStandartCase.indexOf(char) !== -1;
+    /**
+     * Check for non standart case
+     * @param char
+     * @returns {boolean} True, if name has non standart cases
+     */
+    static isNonStandartCase(name) {
+        return this.nonStandartCase.indexOf(name) !== -1;
     }
 }
