@@ -1,7 +1,7 @@
 {
     "name": "ru-declensions-geo",
-    "version": "1.0.7",
-    "description": "Library to get declensions of russian geographical names",
+    "version": "1.0.8",
+    "description": "Library to get declensions of russian toponyms",
     "main": "index.js",
     "scripts": {
         "build": "./node_modules/.bin/babel -q src -d lib",
@@ -13,9 +13,12 @@
         "url": "https://github.com/glintik/ru-declensions-geo.git"
     },
     "keywords": [
-        "declensions",
+        "declension",
         "russian",
-        "sklonenie"
+        "sklonenie",
+        "toponym",
+        "accidence",
+        "inflection"
     ],
     "author": "Alex Kubyshkin",
     "license": "MIT",
