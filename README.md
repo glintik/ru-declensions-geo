@@ -1,8 +1,6 @@
 # ru-declensions-geo
 Library to decline russian geographical names.
 
-Based on [Morphos](https://raw.githubusercontent.com/wapmorgan/Morphos/) (PHP solution).
-
 ## Installation
 npm install ru-declensions-geo --save
 
@@ -25,7 +23,7 @@ Result is:
 ### getCases(name)
 Get cases for a given geographical name.
 
-Returns array with cases:
+Returns an array with declined name with proper case endings:
 ```
 [
   nominative(именительный),
@@ -36,11 +34,30 @@ Returns array with cases:
   prepositional(предложный)
 ] 
 ```
-
 In case of empty string, returns null. If name is immutable, all cases will be filled with the same name.
+
+### inLocation(name)
+Returns string "в/на [name]" for a given toponym.
+
+Examples:
+```javascript
+inLocation('Санкт-Петербург')
+```
+Returns: "в Санкт-Петербурге"
+
+```javascript
+inLocation('Куба')
+```
+
+Returns: "на Кубе"
+
+```javascript
+inLocation('Франция')
+```
+Returns: "во Франции"
  
 ## Tests
-There are some tests in test folder. You can run it with:
+There are many tests in test folder. You can run it with:
 ```bash
 npm test
 ```
