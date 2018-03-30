@@ -1,6 +1,6 @@
 {
     "name": "ru-declensions-geo",
-    "version": "1.0.9",
+    "version": "1.0.10",
     "description": "Library to get declensions of russian toponyms",
     "main": "index.js",
     "scripts": {

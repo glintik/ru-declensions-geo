@@ -626,7 +626,8 @@ export default class GeoNamesDeclensions {
             return ifDeaf;
         }
 
-        throw new Exception('Not implemented');
+        // Default value
+        return ifDeaf;
     }
 
     /**
