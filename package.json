@@ -1,6 +1,6 @@
 {
     "name": "ru-declensions-geo",
-    "version": "1.0.10",
+    "version": "1.0.11",
     "description": "Library to get declensions of russian toponyms",
     "main": "index.js",
     "scripts": {
@@ -25,11 +25,11 @@
     "homepage": "https://github.com/glintik/ru-declensions-geo",
     "devDependencies": {
         "babel-cli": "^6.26.0",
-        "babel-core": "^6.26.0",
+        "babel-core": "^6.26.3",
         "babel-plugin-transform-class-properties": "^6.24.1",
         "babel-preset-es2015": "^6.24.1",
-        "chai": "^4.1.2",
-        "mocha": "^5.0.4"
+        "chai": "^4.2.0",
+        "mocha": "^6.1.4"
     },
     "maintainers": [
         {
